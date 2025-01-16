@@ -1,5 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
+/* * {
    border: solid blue;
+} */
+
+body {
+   font-family: "Roboto", sans-serif;
 }
+
+/* .hero-text .page-top * {
+   border: solid blue;
+} */
+
+.hero-text {
+   background-color: #1F2937;
+}
+
+/*********** Header Styling ***********/
+
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.logo {
+   margin-left: 100px;
+   color: #F9FAF8;
+   font-size: 24px;
+}
+
+.hero-links {
+   margin-right: 100px;
+}
+
+.hero-links a {
+   margin: 10px;
+   text-decoration: none;
+   font-size: 18px;
+   color: #E5E7EB;
+}
+
+#right-link {
+   margin-right: 0px;
+}
+
+/*********** Page Top formatting ***********/
+
+.page-top {
+   display: flex;
+   justify-content: space-between;
+   gap: 0px 50px;
+}
+
+.main {
+   font-size: 48px;
+   color: #F9FAF8;
+   font-weight: 900;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.secondary {
+   font-size: 18px;
+   color: #E5E7EB;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.pt-left button {
+   margin-top: 0px;
+   margin-bottom: 10px;
+   border-radius: 8px;
+   height: 30px;
+   width: 100px;
+   background-color: #3882F6;
+   border: #3882F6;
+   color: #F9FAF8;
+}
+
+.page-top img {
+   margin-right: 100px;
+}
+
+.pt-left {
+   margin-left: 100px;
+}
+
+
+
+
+
