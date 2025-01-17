@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+   --pt-margin: 50px;
+}
+
 body {
    font-family: "Roboto", sans-serif;
+   margin: 0px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   min-height: 100vh;
 }
 
 .hero-text {
@@ -14,12 +23,15 @@ body {
    display: flex;
    align-items: center;
    justify-content: space-between;
+   height: 50px;
 }
 
 .logo {
    margin-left: 100px;
    color: #F9FAF8;
    font-size: 24px;
+   margin: 0px;
+   margin-left: 100px;
 }
 
 .hero-links {
@@ -43,6 +55,7 @@ body {
    display: flex;
    justify-content: space-between;
    gap: 0px 50px;
+   align-items: center;
 }
 
 .main {
@@ -50,7 +63,7 @@ body {
    color: #F9FAF8;
    font-weight: 900;
    margin-top: 10px;
-   margin-bottom: 10px;
+   margin-bottom: 0px;
 }
 
 .secondary {
@@ -72,11 +85,21 @@ body {
 }
 
 .page-top img {
+   margin-top: var(--pt-margin);
+   margin-bottom: var(--pt-margin);
    margin-right: 100px;
+   width: auto;
+   height: 200px;
 }
 
 .pt-left {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
    margin-left: 100px;
+   margin-top: var(--pt-margin);
+   margin-bottom: var(--pt-margin);
+   
 }
 
 /*********** Info formatting ***********/
@@ -113,14 +136,11 @@ body {
 
 .info ul li img {
    border-radius: 10px;
-   border-color: #3882f6;
+   border: solid 3px #3882f6;;
+
 }
 
 /*********** Quote Section formatting ***********/
-
-.quote * {
-   border: solid blue;
-}
 
 .quote {
    background-color: #E5E7EB;
@@ -132,17 +152,81 @@ body {
    padding-right: 200px;
 }
 
-.quote .text {
+.quote.text {
    font-size: 36px;
    font-style: italic;
+   margin-bottom: 0px;
 }
 
-.quote .signature {
+.quote.signature {
    font-weight: bold;
    text-align: right;
+   margin-top: 0px;
 }
 
+/*********** Bottom Card formatting ***********/
+/* .modal * {
+   border: solid blue;
+} */
 
+.modal {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 
+.modal .box {
+   display: flex;
+   border-radius: 8px;
+   margin-left: 100px;
+   margin-right: 100px;
+   background-color: #3882F6;
+   color: #F9FAF8;
+   height: 100px;
+   width: 800px;
+   justify-content: center;
+   align-items: center;
+   gap: 100px;
+}
+
+.modal .box .text {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.modal .box .text p {
+   margin: 0px;
+}
+
+#cta {
+   font-weight: bold;
+}
+
+#signup-text {
+   font-size: 12px;
+   color: #E5E7EB;
+}
+
+.modal .box button {
+   background-color:  #3882F6;
+   border: solid 1px #F9FAF8;
+   color: #F9FAF8;
+   border-radius: 5px;
+   height: 30px;
+   width: 100px;
+}
+
+/*********** Footer formatting ***********/
+
+.footer {
+   display: flex;
+   background-color: #1F2937;
+   color: #E5E7EB;
+   align-items: center;
+   justify-content: center;
+   height: 50px;
+   margin: 0px;
+}
 
 
