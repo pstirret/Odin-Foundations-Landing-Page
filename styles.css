@@ -113,9 +113,11 @@ body {
 
 .info ul {
    display: flex;
+   justify-content: center;
    list-style-type: none;
    padding: 0px;
    margin: 0px;
+   margin-bottom: 50px;
    gap: 30px;
    padding-left: 200px;
    padding-right: 200px;
@@ -126,18 +128,23 @@ body {
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
+   justify-content: start;
    text-align: center;
 }
 
 .info ul li p {
    margin: 0px;
    color: #1F2937;
+   vertical-align: top;
 }
 
 .info ul li img {
    border-radius: 10px;
-   border: solid 3px #3882f6;;
-
+   border: solid 3px #3882f6;
+   height: 200px;
+   width: 200px;
+   object-fit: cover;
+   overflow: hidden;
 }
 
 /*********** Quote Section formatting ***********/
@@ -180,6 +187,8 @@ body {
    border-radius: 8px;
    margin-left: 100px;
    margin-right: 100px;
+   margin-top: 75px;
+   margin-bottom: 75px;
    background-color: #3882F6;
    color: #F9FAF8;
    height: 100px;
